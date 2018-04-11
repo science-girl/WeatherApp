@@ -3,15 +3,6 @@ import React from 'react';
 const Weather = props => {
   return (
     <div className="weather__info">
-      {props.city &&
-        props.country && (
-          <p className="weather__key">
-            Location:
-            <span>
-              {props.city}, {props.country}
-            </span>
-          </p>
-        )}
       {props.temperature && (
         <p className="weather__key">
           Temperature:<span> {props.temperature}</span>

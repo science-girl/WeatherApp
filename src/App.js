@@ -4,7 +4,7 @@ import Form from './components/Form';
 import Title from './components/Title';
 import Weather from './components/Weather';
 import './App.css';
-require('dotenv').config();
+import API_KEY from './config';
 
 class App extends Component {
   state = {
@@ -22,9 +22,7 @@ class App extends Component {
 
     const city = event.target.elements.city.value;
     const country = event.target.elements.country.value;
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${
-      process.env.API_KEY
-    }&units=metric`;
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`;
 
     const api_call = await fetch(url);
 
