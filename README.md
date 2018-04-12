@@ -19,4 +19,4 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Acknowledgments
 
-* Thanks to Paul Lam for leading this meetup!
+* Thanks to Paul Lam for leading this meetup (and the awesome css)!
